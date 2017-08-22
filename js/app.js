@@ -3,7 +3,7 @@ $('form').submit(function(e){
   $('#first-name').css('border-color', '')
   $('#last-name').css('border-color', '')
   $('#mobile-number').css('border-color', '')
-  $('input:checkbox').removeAttr('checked'); 
+  $('#confirmed').css('border-color', '')
 
   var nombre = $('#first-name').val();
   var apellido = $('#last-name').val();
@@ -36,7 +36,7 @@ $('form').submit(function(e){
   $('#first-name').val('');
   $('#last-name').val('');
   $('#mobile-number').val('');
-  $('#confirmed').val('');
+  $('#confirmed').removeAttr('checked');
 
 
   $('#new-guest').modal('hide');
