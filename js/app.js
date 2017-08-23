@@ -45,10 +45,6 @@
 // });
 
 
-
-
-
-
 // escribe tu código acá
 $('button').on('click', function(){
 
@@ -58,11 +54,12 @@ $('button').on('click', function(){
     { "code": "EC", "name": "Ecuador", "flag_url": "https://s3.amazonaws.com/makeitreal/ec.gif" },
     { "code": "BO", "name": "Bolivia", "flag_url": "https://s3.amazonaws.com/makeitreal/bo.gif" }
   ];
+  $('body').append('<table></table>');
+  $('table').append('<tr><th>' +"Code" + '</th>' + '<th>' + "Name" + '</th>' + '<th>' +"Flag"+ '</th>' +'</tr>')
+  $('table').append('<tr><td>' + countries[0].code + '</td><td>' + countries[0].name + '</td><td><img src="' + countries[0].flag_url + '"></td></tr>')
+  $('table').append('<tr><td>' + countries[1].code + '</td><td>' + countries[1].name + '</td><td><img src="' + countries[1].flag_url + '"></td></tr>')
+  $('table').append('<tr><td>' + countries[2].code + '</td><td>' + countries[2].name + '</td><td><img src="' + countries[2].flag_url + '"></td></tr>')
+  $('table').append('<tr><td>' + countries[3].code + '</td><td>' + countries[3].name + '</td><td><img src="' + countries[3].flag_url + '"></td></tr>')
 
-  $('body').append('<table>' + '<tr>' + '<th>' +"Code" + '</th>' + '<th>' + "Name" + '</th>' + '<th>' +"Flag"+ '</th>' +'</tr>' + '</table>')
-  $('body').append('<tr>' + '<td>' +countries[0].code + '</td>' + '<td>' + countries[0].name + '</td>' + '<td>' +'<img src="countries[0].flag_url" /> '+ '</td>' + '</tr>' + '</table>')
-  $('body').append('<tr>' + '<td>' +countries[1].code + '</td>' + '<td>' + countries[1].name + '</td>' + '<td>' +'<img src="countries[1].flag_url" /> '+' </td>' + '</tr>' + '</table>')
-  $('body').append('<tr>' + '<td>' +countries[2].code + '</td>' + '<td>' + countries[2].name + '</td>' + '<td>' +'<img src="countries[2].flag_url" /> '+' </td>' + '</tr>' + '</table>')
-  $('body').append('<tr>' + '<td>' +countries[3].code + '</td>' + '<td>' + countries[3].name + '</td>' + '<td>' +'<img src="countries[3].flag_url" /> '+' </td>' + '</tr>' + '</table>')
-
+  $('button').hide()
 });
